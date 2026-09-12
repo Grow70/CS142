@@ -1,0 +1,49 @@
+/* CS142 project1 styleA */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+
+    /* 垂直均匀分布，窗口缩放自动均分间距 */
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+.box {
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+
+    /* 禁止放大和缩小 */
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    /* 文字水平、垂直居中 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-top: 1px solid #687291;
+    font-family: Tahoma;
+    font-size: 40px;
+}
+
+.box:nth-child(odd) {
+    background-color: #dfe1e7;
+}
+
+.box:nth-child(even) {
+    background-color: #eeeff2;
+}
+
+.box:last-child {
+    background-color: #687291;
+    border: 4px solid black;
+}
