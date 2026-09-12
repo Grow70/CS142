@@ -1,0 +1,46 @@
+/* CS142 project1 styleB */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    white-space: nowrap;
+}
+
+#container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    gap: 10px;
+    padding: 10px;
+}
+
+.box {
+    box-sizing: border-box;
+    width: 100px;
+    height: 150px;
+
+    /* 禁止放大和缩小 */
+    flex-shrink: 0;
+    flex-grow: 0;
+
+    background-color: #eeeff2;
+    border-left: 10px dotted #d0d0ff;
+
+    font-family: Tahoma;
+    font-size: 40px;
+    padding: 10px;
+}
+
+.box:hover {
+    cursor: pointer;
+    background-color: yellow;
+    color: goldenrod;
+}
+
+.box:last-child {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
